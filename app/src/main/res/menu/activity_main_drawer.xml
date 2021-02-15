@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/main_menu">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/travelling"
+            android:title="Samarkand" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_ancient"
+            android:icon="@drawable/ancient"
+            android:title="Tarixiy joylar" />
+        <item
+            android:id="@+id/nav_museum"
+            android:icon="@drawable/museum"
+            android:title="Muzey &amp; Teatr" />
+        <item
+            android:id="@+id/nav_hotel"
+            android:icon="@drawable/hotel"
+            android:title="Mehmonxonlar" />
+        <item
+            android:id="@+id/nav_feeding"
+            android:icon="@drawable/fast_food"
+            android:title="Ovqat &amp; Ichimliklar" />
+        <item
+            android:id="@+id/nav_cinema"
+            android:icon="@drawable/video"
+            android:title="O'yin-kulgi" />
+        <item
+            android:id="@+id/nav_sport"
+            android:icon="@drawable/whistle"
+            android:title="Sport" />
+        <item
+            android:id="@+id/nav_state"
+            android:icon="@drawable/embassy"
+            android:title="Davlat xizmati" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/credit_card_payment"
+            android:title="Pulni almashtirish" />
+        <item
+            android:id="@+id/nav_toilet"
+            android:icon="@drawable/wc"
+            android:title="Umumiy hojatxona" />
+        <item
+            android:id="@+id/nav_station"
+            android:icon="@drawable/gas_station"
+            android:title="Yoqilg'i shaxobchasi" />
+    </group>
+</menu>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.DescriptionFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.DescriptionFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        android:background="@drawable/kukeldash"
+        android:id="@+id/descPlaceImage"/>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/informationCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintTop_toBottomOf="@id/descPlaceImage"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/home"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/phoneImage"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/addressIcon"/>
+
+                <TextView
+                    android:id="@+id/descPlaceLocation"
+                    app:layout_constraintStart_toEndOf="@id/addressIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uzbekistan_samarkand_registan_square"
+                    app:layout_constraintTop_toTopOf="@id/addressIcon"
+                    app:layout_constraintBottom_toBottomOf="@id/addressIcon"
+                    android:textColor="#3A345A"
+                    android:padding="4dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"/>
+
+                <ImageView
+                    android:id="@+id/phoneImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintTop_toBottomOf="@id/addressIcon"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintBottom_toTopOf="@id/earthImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/phone_call"/>
+
+                <TextView
+                    android:id="@+id/descPlacePhoneAddress"
+                    app:layout_constraintStart_toEndOf="@id/addressIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mavjud emas"
+                    app:layout_constraintTop_toTopOf="@id/phoneImage"
+                    app:layout_constraintBottom_toBottomOf="@id/phoneImage"
+                    android:textColor="#3A345A"
+                    android:padding="4dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"/>
+
+                <ImageView
+                    android:id="@+id/earthImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintTop_toBottomOf="@id/phoneImage"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/world"/>
+
+                <TextView
+                    android:id="@+id/descPlaceWecLink"
+                    app:layout_constraintStart_toEndOf="@id/addressIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mavjud emas"
+                    app:layout_constraintTop_toTopOf="@id/earthImage"
+                    app:layout_constraintBottom_toBottomOf="@id/earthImage"
+                    android:textColor="#3A345A"
+                    android:padding="4dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        app:cardCornerRadius="9dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/informationCard"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutnn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ta'rif"
+                android:textSize="26sp"
+                android:textColor="#3A345A"
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/descPlaceDescription"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3A345A"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/infod"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapCard"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        app:layout_constraintHeight_percent="0.27"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="10dp">
+
+<!--        <com.google.android.gms.maps.MapView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/mapDesc"/>-->
+
+<!--        <fragment-->
+<!--            android:id="@+id/mapDesc"-->
+<!--            android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/xxxxx"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textSize="18sp"
+            android:gravity="start|top"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:textColor="#3A345A"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/google_map_fragment"
+            app:layout_constraintTop_toBottomOf="@id/xxxxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/xxxtext"
+            android:layout_marginTop="8dp"
+            android:layout_margin="8dp" />
+
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/xxxtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="@string/navigate"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textColor="#3A345A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintTop_toTopOf="@id/xxxtext"
+                app:layout_constraintBottom_toBottomOf="@id/xxxtext"
+                app:layout_constraintEnd_toStartOf="@id/xxxtext"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/compass"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3A345A"
+        app:layout_constraintTop_toBottomOf="@id/descPlaceImage"
+        app:layout_constraintBottom_toBottomOf="@id/descPlaceImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_baseline_share_24"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

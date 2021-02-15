@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212179957094",
+    "project_id": "travelling-app-course",
+    "storage_bucket": "travelling-app-course.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212179957094:android:75919068cc2cf74c3984a7",
+        "android_client_info": {
+          "package_name": "com.example.travellingappcourse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212179957094-fd15hfp0ctp8sh9tb5t05c626ovfht34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtTbiwincgq6OMr11eEWK5nhHswGKwhT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212179957094-fd15hfp0ctp8sh9tb5t05c626ovfht34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
