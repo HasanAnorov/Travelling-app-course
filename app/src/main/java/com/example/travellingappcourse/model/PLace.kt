@@ -3,27 +3,15 @@ package com.example.travellingappcourse.model
 import android.widget.ImageView
 import java.io.Serializable
 
-class PLace :Serializable{
-    var name:String = ""
-    var location:String = ""
-    var phoneAddress:String = ""
-    var webLink:String = ""
-    var description:String =""
-    var image:Int = 0
-    var lat:Double =0.0
-    var long:Double = 0.0
+data class PLace(
+        var name:String? = null,
+        var location:String? = null,
+        var phoneAddress:Int? = null,
+        var webLink:String? = null,
+        var description:String? =null,
+        var image:String? = null,
+        var lat:Double =0.0,
+        var long:Double = 0.0
+) :Serializable{
 
-
-
-    constructor()
-    constructor(name: String, location: String, phoneAddress: String, webLink: String, description: String, image: Int, lat: Double, long: Double) {
-        this.name = name
-        this.location = location
-        this.phoneAddress = phoneAddress
-        this.webLink = webLink
-        this.description = description
-        this.image = image
-        this.lat = lat
-        this.long = long
-    }
 }

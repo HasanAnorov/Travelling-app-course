@@ -26,11 +26,11 @@ class DescriptionFragment : Fragment(),OnMapReadyCallback {
         binding = FragmentDescriptionBinding.inflate(inflater,container,false)
         val place = arguments?.getSerializable("place") as PLace
 
-        binding.descPlaceImage.setImageResource(place.image)
-        binding.descPlaceLocation.text = place.location
-        binding.descPlacePhoneAddress.text = place.phoneAddress
-        binding.descPlaceWecLink.text = place.webLink
-        binding.descPlaceDescription.text = place.description
+//        binding.descPlaceImage.setImageResource(place.image)
+//        binding.descPlaceLocation.text = place.location
+//        binding.descPlacePhoneAddress.text = place.phoneAddress
+//        binding.descPlaceWecLink.text = place.webLink
+//        binding.descPlaceDescription.text = place.description
         val toolbar: Toolbar = activity?.findViewById(R.id.toolbar)!!
         toolbar.title=place.name
         val mapFragment = childFragmentManager.findFragmentById(R.id.google_map_fragment) as SupportMapFragment
